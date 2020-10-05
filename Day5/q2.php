@@ -47,12 +47,12 @@
     			$mail->Host='smtp.gmail.com';
     			$mail->SMTPAuth = true;
       			$mail->Username = 'shikhasha18ce@student.mes.ac.in';	// Gmail ID 
-      			$mail->Password = ' 2018PE0421';	// Gmail Password
+      			$mail->Password = 'enter your password';	// Gmail Password
       			$mail->SMTPSecure = 'tls';
       			$mail->Port = 587;
 
       			$mail->setFrom($email,$name);	// Email ID from which you want to send the email
-      			$mail->addAddress('shikhasha18ce@student.mes.ac.in');	// Recipient Email ID where you want to receive emails
+      			$mail->addAddress('Your mail id');	// Recipient Email ID where you want to receive emails
       			$mail->addReplyto($email,$name);
       			$mail->isHTML(true);
       		

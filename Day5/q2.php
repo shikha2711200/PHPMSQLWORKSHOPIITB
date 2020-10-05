@@ -46,7 +46,7 @@
     			$mail->IsSMTP();
     			$mail->Host='smtp.gmail.com';
     			$mail->SMTPAuth = true;
-      			$mail->Username = 'shikhasha18ce@student.mes.ac.in';	// Gmail ID 
+      			$mail->Username = 'Your mail id';	// Gmail ID 
       			$mail->Password = 'enter your password';	// Gmail Password
       			$mail->SMTPSecure = 'tls';
       			$mail->Port = 587;

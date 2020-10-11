@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin login</title>
+	<style type="text/css">
+		body
+		{
+			/*background:linear-gradient(to right ,#00c3ff,#ffff1c);*/
+			background-image: url("https://i.pinimg.com/originals/0b/55/b7/0b55b7c90863ad43ab8f70d2c6dd9a3f.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		h1
+		{
+			font-size:45px;
+			font-variant: small-caps;
+			margin-left:22%;
+			margin-top: -0.5%;
+			color: white;
+		}
+		label
+		{
+			font-size: 25px;
+			font-variant: small-caps;
+			color: white;
+		}
+		#name , #password
+		{
+			margin-left:3%;
+			width:50%;
+		}
+		#submit
+		{
+			margin-left:23%;
+			width:50%;	
+			height: 30px;
+			border-radius: 20px;
+		}
+		span
+		{
+			color: red;
+		}
+		fieldset
+		{
+			background-color:rgb(0,0,0,); /*fall back color*/
+			background-color: rgba(0,0,0,0.4); /*transparency*/
+			margin-left:30%;
+			margin-right:30%;
+			margin-top:15%;
+			border:10px solid white;
+		}
+		#submit
+		{
+			background:linear-gradient(to right ,deepskyblue,blue);
+			color: white;
+			font-size: 20px;
+			font-variant: small-caps;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<div style="margin-right:-0.4%;margin-left:-1%;">
+		<iframe src="upperportion.html" frameborder="0" width="100%" height="110px" scrolling="yes" style="margin-top:-0.8%;"></iframe>
+	</div>
+
+	<form action="admindata.php" target="_blank" method="POST">
+		<fieldset >
+			<caption><h1>Admin Login Page</h1></caption>
+			<hr>
+			<p><label>Username<span>*</span></label><input type="text" name="name" placeholder="Enter College Id" id="name" required=""></p>
+			<p><label>Password<span>*</span></label><input type="text" name="password" id="password" required=""></p>
+			<p><input type="submit" name="submit" id="submit" value="Login"></p>
+			<hr>
+			<p><a href="register.html"><input type="submit" value="Register"></a></p>
+		</fieldset>
+		
+	</form>
+</body>
+</html>

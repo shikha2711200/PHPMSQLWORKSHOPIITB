@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student login</title>
+	<style type="text/css">
+		body
+		{
+			/*background:linear-gradient(to right ,deepskyblue,white);*/
+			background-image: url("https://bloximages.chicago2.vip.townnews.com/herald-review.com/content/tncms/assets/v3/editorial/0/db/0db14974-3da2-5a74-87a1-1a63331a4d71/5f2e18f696b56.image.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		h1
+		{
+			font-size:45px;
+			font-variant: small-caps;
+			margin-left:22%;
+			margin-top: -0.5%;
+			color: white;
+		}
+		label
+		{
+			font-size: 25px;
+			font-variant: small-caps;
+			color: white;
+		}
+		#name , #password
+		{
+			margin-left:3%;
+			width:50%;
+		}
+		#submit
+		{
+			margin-left:23%;
+			width:50%;	
+			height: 30px;
+			border-radius: 20px;
+		}
+		span
+		{
+			color: red;
+		}
+		fieldset
+		{
+			background-color:rgb(0,0,0,); /*fall back color*/
+			background-color: rgba(0,0,0,0.4); /*transparency*/
+			margin-left:30%;
+			margin-right:30%;
+			margin-top:19%;
+			border:10px solid white;
+		}
+		#submit
+		{
+			background:linear-gradient(to right ,deepskyblue,blue);
+			color: white;
+			font-size: 20px;
+			font-variant: small-caps;
+		}
+	</style>
+</head>
+<body>
+	<!-- HEARDER -->
+	<div style="margin-right:-0.4%;margin-left:-1%;">
+		<iframe src="upperportion.html" frameborder="0" width="100%" height="110px" scrolling="yes" style="margin-top:-0.8%;"></iframe>
+	</div>
+	<form action="studentdata.php" target="_blank" method="POST">
+		<fieldset >
+			<caption><h1>Student Login Page</h1></caption>
+			<hr>
+			<p><label>Username<span>*</span></label><input type="text" name="name" placeholder="Enter College Id" id="name" required=""></p>
+			<p><label>Password<span>*</span></label><input type="text" name="password" id="password" required=""></p>
+			<p><input type="submit" name="submit" id="submit" value="Login"></p>
+			<hr>
+			<p><a href="register.html"><input type="submit" value="Register"></a></p>
+		</fieldset>
+	</form>
+	</body>
+</html>
